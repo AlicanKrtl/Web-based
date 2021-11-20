@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Font Kullanımı</title>
+</head>
+<body>
+	<ol type = "1"> <!--  ordered list  -->
+		<li> Kimya
+			<ol type = "a"> <!--liste biçimi type ile belirlenir !-->
+				<li> Organik Kimya
+				<li> Inorganik Kimya 
+			</ol>
+		<li> Fizik <!-- liste item -->
+		<li> Matematik
+	
+
+
+	</ol>
+	
+	<ul type = "disc"> <!-- noktalı madde !-->
+		<li> Kimya
+			<ul type = "square"> <!-- kareli madde !-->
+				<li> Organik Kimya
+				<li> Inorganik Kimya 
+			</ul>
+		<li> Fizik <!-- liste item -->
+		<li> Matematik
+		
+	</ul>
+
+		
+<form name="form1" method="post" action="index1.html"> <!-- alınan inputların adreste görünmesini
+ method="post" engeller. girişe tıklayınca actiondaki siteye gönderir!-->
+
+<table border="0">
+<tr>
+	<td>Kullanıcı adı:</td>
+	<td><input type = "text" name="ali">  <!-- input alır !--></td>
+</tr>
+<tr>
+	<td>Soyadı:</td>
+	<td><input type = "text" name = "soyadi"></td>
+</tr>
+<tr>
+	<td>Email:</td>
+	<td><input type = "email" name = "email"></td>
+</tr>
+<tr>
+	<td>Öğrenim Durumunuz:</td>
+	<td><select>
+			<option>İlkokul</option>
+			<option>Ortaokul</option>
+		</select>
+	</td>
+</tr>
+
+<tr>
+	<td>İnternette harcadığınız süre:</td>
+	<td>
+	<input type = "radio" name="sure">1 saat
+	<input type = "radio" name="sure">2 saat <!-- name 3'ünde de aynı olmalı ki sadece 1 tanesini seçebilesin !-->
+	<input type = "radio" name="sure">3 saat
+	</td>
+</tr>
+<tr>
+	<td>Başlık:</td>
+	<td><input type="text" name="baslik"></td>
+</tr>
+<tr>
+	<td>Yorum:</td>
+	<td><textarea></textarea></td>
+</tr>
+<tr>
+	<td><input type="submit" value="Giriş" name ="giris">  <!-- buton oluşturur !-->
+	<input type="reset" value="Temizle"></td>
+</tr>
+</table>
+</form>
+		
+</body>
+</html>

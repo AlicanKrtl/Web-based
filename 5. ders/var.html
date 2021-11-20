@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+	<body>
+		<input type="text" id="Kenar1" placeholder="Kısa kenar">
+		<input type="text" id="Kenar2" placeholder="Uzun kenar">
+		<input type="button" value="Hesapla" id="hesapla" onclick="hesapla()">
+		<p id="sonuc"></p>
+	</body>
+</html>
+
+<script>
+	function hesapla()
+	{
+		var k1=document.getElementById("Kenar1").value;
+		var k2=document.getElementById("Kenar2").value;
+
+		k1=Number(k1); // metin ifadeyi sayıya çevirir.
+		k2=Number(k2);
+		var cevre=(k1+k2)*2;
+		document.getElementById("sonuc").innerHTML="iki kenarı girilen dikdörtgenin çevresi:"+ cevre;
+		// alert("iki kenarı girilen dikdörtgenin çevresi:"+cevre);
+	}
+</script>
